@@ -24,7 +24,7 @@ CHANNEL_USERNAME = "@dada_travel"
 CHANNEL_URL = "https://t.me/dada_travel"
 ADVISER_USERNAME = "@dadatravel_adviser"
 
-PDF_FILE = "theatre_premieres.pdf"
+PDF_FILE = "DaDa_Travel_Theatre_Premieres.pdf"
 
 
 # ==============================
@@ -111,7 +111,7 @@ async def send_guide(message: Message):
         return
 
     await message.answer_document(
-        document=FSInputFile(PDF_FILE, filename="DaDa_Travel_Theatre_Premieres.pdf"),
+        document=FSInputFile(PDF_FILE),
         caption=(
             "Спасибо за подписку ❤️\n\n"
             "Ловите главные театральные хайлайты сезона!"
